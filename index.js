@@ -1,24 +1,9 @@
 import React, { Component } from 'react';
 import { render } from 'react-dom';
-import './style.css';
 
-class App extends Component {
-  constructor() {
-    super();
-    this.state = {
-      name: 'React'
-    };
-  }
+//user defined imports
+import { Routes } from './Routes/RouteLinks';
 
-  render() {
-    return (
-      <div>
-        <p>
-          Start editing to see some magic happen :)
-        </p>
-      </div>
-    );
-  }
-}
 
-render(<App />, document.getElementById('root'));
+
+render(Routes, document.getElementById('app'));
